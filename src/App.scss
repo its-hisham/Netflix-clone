@@ -3,7 +3,9 @@
 *{
     padding: 0%;
     margin: 0%;
-    font-family: "Roboto" ,"sans-serif"
+    font-family: "Roboto" ,"sans-serif";
+    color: white
+    
 };
 
 a{
@@ -42,9 +44,15 @@ $bg:rgb(16,16,16);
     color:white;
     font-size: 1.5rem;
     cursor: pointer;
+    font-weight: 300;
+
+    &:hover{
+        color:rgb(113, 54, 54)
+    }
 }
 
 }
+
 
 
 

@@ -1,24 +1,25 @@
 import React from 'react'
-import logo from "../../netflix-logo-drawing-png-19.png"
-import { Link } from 'react-router-dom'
-import {BsSearch} from "react-icons/bs"
+import logo from "../../logo.png"
+import { Link } from "react-router-dom"
+import { ImSearch } from "react-icons/im"
 
 const Header = () => {
-  return (
-    <nav className="header">
-<img src={logo} alt="logo" />
+    return (
+        <nav className="header">
 
-<div>
-    <Link to="/TVshows">TV Shows</Link>
-    <Link to="/movies">Movies</Link>
-    <Link to="/recent">Recently Added</Link>
-    <Link to="/myList">My List</Link>
-</div>
+            <img src={logo} alt="logo" />
 
-<BsSearch/>
+            <div>
+                <Link to="/tvshows" >TV Shows</Link>
+                <Link to="/movies" >Movies</Link>
+                <Link to="/recent" >Recently Added</Link>
+                <Link to="/mylist" >My List</Link>
+            </div>
 
-    </nav>
-  )
+            <ImSearch />
+
+        </nav>
+    )
 }
 
 export default Header
